@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+        <!-- bootstrap below -->
+    
+        <!-- react babel below -->
+        <script
+        src="https://unpkg.com/@babel/standalone/babel.min.js"
+        crossorigin
+        ></script>
+        <script
+        src="https://unpkg.com/react@17/umd/react.development.js"
+        crossorigin
+        ></script>
+        <script
+        src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+        crossorigin
+        ></script>
+        <script type="text/jsx" src="./fromGit.jsx"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+        <title>FETCH&RENDER: MERRIAM WEBSTER DICTIONARY</title>
+  </head>
+  <body>
+      <div id="root">
+          <!-- Headers -->
+          <div id="headers">
+                <h1>
+                    SEARCH TO SEE THE MEANING.
+                </h1>
+                <input id="search-box" type="text" placeholder="Type your word here...">
+                <button onClick="getData()">TRANSLATE</button>
+          </div>
+          <!-- Main Activity -->
+          <div id="result">
+              <div id="title"></div>
+              <li>
+                  <div id="def"></div>
+                  <div id="inSentence"></div>
+              </li>
+          </div>
+      </div>
+  </body>
+  <footer>
+      <div>
+          <ul>
+              <p>Lesson: Fetching and rendering</p>, 
+              <p>Course: MITxPRO</p>
+              <p>Developer Student: Brent BK.</p>
+              <p>API From: Merriam Webster Dictionary</p>
+          </ul>
+      </div>
+  </footer>
